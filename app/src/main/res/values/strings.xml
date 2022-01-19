@@ -1,23 +1,30 @@
 <resources>
-    <string name="app_name">Sistem Aset Manajer</string>
-    <string name="title_activity_login">LoginActivity</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
-
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="app_name">Pengelola Aset</string>
+    <string name="image_desc_logo" translatable="false">UI Logo</string>
+    <string name="text_authname">Otentikasi Lisensi</string>
+    <string name="text_authkey">Kunci Otentikasi</string>
+    <string name="text_authtext">Otentikasi Perangkat</string>
+    <string name="text_authmsgs">untuk menggunakan Pengelola Aset</string>
+    <string name="text_authtexthint">Masukan Otentikasi</string>
+    <string name="text_authkeyhint">Masukan Kunci Otentikasi</string>
+    <string name="text_authenticate">Otentikasi</string>
+    <string name="text_btnclose">Keluar</string>
+    <string name="text_noauthmsgs">Mohon isikan otentikasi anda</string>
+    <string name="text_welcome">Masuk</string>
+    <string name="text_entrymsg">untuk melanjutkan ke Pengelola Aset</string>
+    <string name="text_usernamehint" translatable="false">john.doe / john.doe@domain.com</string>
+    <string name="text_passwordhint" translatable="false">P@5sw0rd</string>
+    <string name="text_signin">Masuk</string>
+    <string name="message_autherror">Otentikasi perangkat gagal!</string>
+    <string name="text_clsclientauth">Reset Klien</string>
+    <string name="q_resetclient">Anda yakin ingin reset client ini?</string>
+    <string name="dbtn_yes">Ya</string>
+    <string name="dbtn_no">Tidak</string>
+    <string name="q_exitapp">Anda yakin ingin menutup aplikasi?</string>
+    <string name="title_exit">Tutup</string>
+    <string name="title_autherror">Gagal Otentikasi</string>
+    <string name="dbtn_close">Tutup</string>
+    <string name="title_resetclient">Reset Aplikasi</string>
+    <string name="toast_emptyuser">Silakan isikan username anda!</string>
+    <string name="toast_emptypass">Silakan isikan kata sandi anda!</string>
 </resources>

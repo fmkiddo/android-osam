@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Asset Management System</string>
+    <string name="app_name">Asset Management</string>
+    <string name="text_authname">License Authentication</string>
+    <string name="text_authkey">Authentication Key</string>
+    <string name="text_authtext">Device Authentication</string>
+    <string name="text_authmsgs">for using Asset Manager</string>
+    <string name="text_authtexthint">Input your License Authentication</string>
+    <string name="text_authkeyhint">Input your Authentication Key</string>
+    <string name="text_authenticate">Authenticate</string>
+    <string name="text_btnclose">Exit</string>
+    <string name="text_noauthmsgs">Please, insert your license authentication</string>
+    <string name="text_welcome">Enter</string>
+    <string name="text_entrymsg">to proceed to Asset Management</string>
+    <string name="text_signin">Sign In</string>
+    <string name="message_autherror">Device authentication faieled!</string>
+    <string name="text_clsclientauth">Reset Client</string>
+    <string name="q_resetclient">Are you sure you want to reset?</string>
+    <string name="dbtn_yes">Yes</string>
+    <string name="dbtn_no">Tidak</string>
+    <string name="q_exitapp">Are you sure want to quit?</string>
+    <string name="title_exit">Quit</string>
+    <string name="title_autherror">Authentication Error</string>
+    <string name="dbtn_close">Close</string>
+    <string name="title_resetclient">Reset Client</string>
+    <string name="toast_emptyuser">Please, type your username!</string>
+    <string name="toast_emptypass">Please, type your password!</string>
 </resources>
