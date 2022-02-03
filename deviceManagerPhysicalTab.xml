@@ -1,0 +1,18 @@
+<application>
+  <component name="deviceManagerPhysicalTab">
+    <physicalDevices>
+      <PhysicalDevice>
+        <key>
+          <Key>
+            <type value="SERIAL_NUMBER" />
+            <value value="480e0797" />
+          </Key>
+        </key>
+        <lastOnlineTime value="2022-02-03T03:11:46.989769Z" />
+        <name value="vivo vivo 1727" />
+        <target value="Android 9.0" />
+        <api value="28" />
+      </PhysicalDevice>
+    </physicalDevices>
+  </component>
+</application>
