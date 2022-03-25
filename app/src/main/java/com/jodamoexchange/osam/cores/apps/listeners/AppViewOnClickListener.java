@@ -1,4 +1,4 @@
-package com.jodamoexchange.osam.cores.apps;
+package com.jodamoexchange.osam.cores.apps.listeners;
 
 import android.app.Activity;
 import android.content.DialogInterface;
@@ -7,6 +7,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AlertDialog;
 
+import com.jodamoexchange.osam.cores.apps.AppActivity;
+import com.jodamoexchange.osam.cores.apps.AppMutablePreferenceController;
 import com.jodamoexchange.osam.cores.apps.controllers.MutablePreferencesController;
 
 public abstract class AppViewOnClickListener implements View.OnClickListener {

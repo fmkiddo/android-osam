@@ -1,4 +1,4 @@
-package com.jodamoexchange.osam.cores.app.activities.ui;
+package com.jodamoexchange.osam.cores.app.activities.ui.fragments;
 
 import com.jodamoexchange.osam.R;
 import com.jodamoexchange.osam.cores.app.activities.listeners.AuthorizationListener;

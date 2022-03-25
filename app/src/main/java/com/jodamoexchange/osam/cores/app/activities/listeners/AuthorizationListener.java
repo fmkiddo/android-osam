@@ -14,11 +14,11 @@ import androidx.fragment.app.FragmentTransaction;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.jodamoexchange.osam.R;
-import com.jodamoexchange.osam.cores.app.activities.ui.UserAuthorizationFragment;
+import com.jodamoexchange.osam.cores.app.activities.ui.fragments.UserAuthorizationFragment;
 import com.jodamoexchange.osam.cores.app.models.AuthenticationModel;
 import com.jodamoexchange.osam.cores.apps.AppConstants;
 import com.jodamoexchange.osam.cores.apps.AppFragment;
-import com.jodamoexchange.osam.cores.apps.AppViewOnClickListener;
+import com.jodamoexchange.osam.cores.apps.listeners.AppViewOnClickListener;
 import com.jodamoexchange.osam.cores.apps.controllers.JSONRequestController;
 
 import org.json.JSONArray;
@@ -26,7 +26,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.UnsupportedEncodingException;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
@@ -104,18 +103,18 @@ public class AuthorizationListener extends AppViewOnClickListener implements Dia
             try {
                 message = response.getJSONArray("message");
                 token   = message.getString (1);
+                token   = "\"" + token + "\"";
             } catch (JSONException exception) {
                 Log.e (AppConstants.HTTP_RESPONSE_ERROR, exception.getMessage());
             }
 
             String encodedToken = Base64.encodeToString(token.getBytes(StandardCharsets.UTF_8), Base64.NO_WRAP);
             this.prefControl.putValue(AppConstants.TOKEN_LICENSE_KEY, encodedToken);
-            Log.i("token", this.prefControl.getString(AppConstants.TOKEN_LICENSE_KEY));
 
             AppFragment loginFragment           = new UserAuthorizationFragment();
             FragmentManager fmanager            = this.getApplicationContext().getSupportFragmentManager();
             FragmentTransaction ftransaction    = fmanager.beginTransaction();
-            ftransaction.replace(R.id.content_layout, loginFragment, AppConstants.DISPLAYED_FRAGMENT);
+            ftransaction.replace(R.id.login_content_layout, loginFragment, AppConstants.DISPLAYED_FRAGMENT);
             ftransaction.commit();
         }
     }
@@ -130,15 +129,15 @@ public class AuthorizationListener extends AppViewOnClickListener implements Dia
         JSONObject jsonAuth         = new JSONObject();
         jsonAuth.put(CLIENTCODE, authname);
         jsonAuth.put(CLIENTPASS, authkey);
-        String authString           = Base64.encodeToString(jsonAuth.toString().getBytes(Charset.defaultCharset()), Base64.NO_WRAP);
+        String authString           = Base64.encodeToString(jsonAuth.toString().getBytes(StandardCharsets.UTF_8), Base64.NO_WRAP);
         String creds                = String.format(HTTP_CREDS_FORMAT, authString, ":");
         Log.i("auth", creds);
-        String credString           = "Basic " + Base64.encodeToString(creds.getBytes(Charset.defaultCharset()), Base64.NO_WRAP);
+        String credString           = "Basic " + Base64.encodeToString(creds.getBytes(StandardCharsets.UTF_8), Base64.NO_WRAP);
 
         String URL                  = "api/client-authentication";
         Map<String, String> headers = new HashMap<>();
         headers.put(AppConstants.HEADER_CONTENT_TYPE, "application/json; charset='utf-8'");
-        headers.put(AppConstants.HEADER_AUTHENTICATION, credString);
+        headers.put(AppConstants.HEADER_AUTHORIZATION, credString);
         headers.put(AppConstants.HEADER_ACCEPT, "application/json");
 
         JSONRequestController requestController = new JSONRequestController(this.getApplicationContext(), URL, AuthenticationModel.class, new JSONObject(), headers);

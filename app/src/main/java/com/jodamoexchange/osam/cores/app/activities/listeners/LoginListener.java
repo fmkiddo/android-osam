@@ -1,6 +1,7 @@
 package com.jodamoexchange.osam.cores.app.activities.listeners;
 
 import android.content.DialogInterface;
+import android.util.Base64;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -11,7 +12,12 @@ import com.jodamoexchange.osam.R;
 import com.jodamoexchange.osam.cores.app.activities.LauncherActivity;
 import com.jodamoexchange.osam.cores.app.activities.OsamActivity;
 import com.jodamoexchange.osam.cores.apps.AppConstants;
-import com.jodamoexchange.osam.cores.apps.AppViewOnClickListener;
+import com.jodamoexchange.osam.cores.apps.listeners.AppViewOnClickListener;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.nio.charset.StandardCharsets;
 
 public class LoginListener extends AppViewOnClickListener implements DialogInterface.OnClickListener {
 
@@ -71,7 +77,14 @@ public class LoginListener extends AppViewOnClickListener implements DialogInter
          */
 
         if (authenticationValid) {
-            this.prefControl.putValue(AppConstants.TOKEN_LOGIN_KEY, "njasnfdijansdjfnasdjdfn");
+            JSONObject validation = new JSONObject();
+            try {
+                validation.put(AppConstants.LOGIN_KEY_USERID, 1);
+                validation.put(AppConstants.LOGIN_KEY_USERNAME, "administrator");
+            } catch (JSONException exception) {
+            }
+            String loginKey = Base64.encodeToString(validation.toString().getBytes(StandardCharsets.UTF_8), Base64.NO_WRAP);
+            this.prefControl.putValue(AppConstants.TOKEN_LOGIN_KEY, loginKey);
             this.doStartNewActivity(OsamActivity.class);
         }
     }
