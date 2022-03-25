@@ -27,4 +27,41 @@
     <string name="title_resetclient">Reset Aplikasi</string>
     <string name="toast_emptyuser">Silakan isikan username anda!</string>
     <string name="toast_emptypass">Silakan isikan kata sandi anda!</string>
+    <string name="opt_setting">Pengaturan</string>
+    <string name="opt_logout">Keluar</string>
+    <string name="opt_exit">Tutup Aplikasi</string>
+    <string name="opt_search">Cari</string>
+    <string name="title_logout">Keluar</string>
+    <string name="q_logoutapp">Anda ingin keluar dari aplikasi?</string>
+    <string name="ic_plus" translatable="false">+</string>
+    <string name="ic_minus" translatable="false">-</string>
+    <string name="menu_title_hasset">Pergerakan Aset</string>
+    <string name="menu_title_assetout">Aset Keluar</string>
+    <string name="menu_title_assetin">Aset Masuk</string>
+    <string name="menu_title_home">Dashboard</string>
+    <string name="text_nodatafound">Tidak Ada Data!</string>
+    <string name="text_assetoutdetail">Data Dokumen Aset Keluar</string>
+    <string name="text_docnum">No. Dokumen</string>
+    <string name="text_docfrom">Lokasi Asal</string>
+    <string name="text_docdest">Lokasi Tujuan</string>
+    <string name="text_return">Kembali</string>
+    <string name="text_approve">Setujui</string>
+    <string name="text_decline">Tolak</string>
+    <string name="text_sent">Kirim</string>
+    <string name="title_apprmvo">Persetujuan</string>
+    <string name="dbtn_cancel">Batal</string>
+    <string name="msg_apprmvo">Setujui permintaan?</string>
+    <string name="title_declmvo">Ditolak</string>
+    <string name="msg_declmvo">Tolak permintaan?</string>
+    <string name="title_welcome">Selamat Datang</string>
+    <string name="tableheader_linenum" translatable="false">#</string>
+    <string name="tableheader_barcode">Kode</string>
+    <string name="tableheader_desc">Deskripsi</string>
+    <string name="tableheader_sblsource">Asal Sublokasi</string>
+    <string name="tableheader_qty">Jml</string>
+    <string name="title_senwmvo">Kirim Barang</string>
+    <string name="msg_senwmvo">Siap dikirimkan?</string>
+    <string name="text_docstatus">Status</string>
+    <string name="text_docdate">Tgl. Pembuatan</string>
+    <string name="text_assetindetail">Data Dokumen Aset Masuk</string>
 </resources>

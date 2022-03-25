@@ -9,17 +9,37 @@
         <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.271875" />
         <entry key="app/src/main/res/drawable/ic_logo.xml" value="0.1546875" />
         <entry key="app/src/main/res/drawable/ic_menu_camera.xml" value="0.1546875" />
+        <entry key="app/src/main/res/drawable/ic_search.xml" value="0.278515625" />
         <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.37135416666666665" />
+        <entry key="app/src/main/res/layout-w936dp/fragment_assetmoveindetail.xml" value="0.11840277777777777" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.3005008347245409" />
         <entry key="app/src/main/res/layout/activity_osam.xml" value="0.148046875" />
+        <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.148046875" />
+        <entry key="app/src/main/res/layout/app_listgroup.xml" value="0.159765625" />
+        <entry key="app/src/main/res/layout/app_listgroup_nochild.xml" value="0.26640625" />
+        <entry key="app/src/main/res/layout/app_listitem.xml" value="0.159765625" />
+        <entry key="app/src/main/res/layout/app_main_info.xml" value="0.26640625" />
+        <entry key="app/src/main/res/layout/app_main_toolbar.xml" value="0.26640625" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.2368659420289855" />
         <entry key="app/src/main/res/layout/drawer_menu.xml" value="0.159765625" />
+        <entry key="app/src/main/res/layout/fragment_assetmovein.xml" value="0.27031311930241775" />
+        <entry key="app/src/main/res/layout/fragment_assetmoveindetail.xml" value="0.27031311930241775" />
+        <entry key="app/src/main/res/layout/fragment_assetmoveout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_assetmoveoutdetail.xml" value="0.15101070154577884" />
         <entry key="app/src/main/res/layout/fragment_authorization.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.26640625" />
+        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.26640625" />
         <entry key="app/src/main/res/layout/fragment_userverification.xml" value="0.33" />
         <entry key="app/src/main/res/layout/launcher_activity.xml" value="0.19739583333333333" />
         <entry key="app/src/main/res/layout/layout_activity_login.xml" value="0.24456521739130435" />
+        <entry key="app/src/main/res/layout/layout_mvo_tablerows.xml" value="0.1359375" />
         <entry key="app/src/main/res/layout/login_activity.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/osam_listchild.xml" value="0.148046875" />
+        <entry key="app/src/main/res/layout/osam_listgroup.xml" value="0.159765625" />
+        <entry key="app/src/main/res/layout/osam_maincontents.xml" value="0.2914529914529915" />
+        <entry key="app/src/main/res/layout/osamlist_group.xml" value="0.159765625" />
         <entry key="app/src/main/res/menu/drawer_menu.xml" value="0.159765625" />
+        <entry key="app/src/main/res/menu/options_menu.xml" value="0.159765625" />
         <entry key="app/src/main/res/menu/osam_menu.xml" value="0.159765625" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.169921875" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.37135416666666665" />
